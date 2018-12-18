@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window=UIWindow(frame: UIScreen.main.bounds)//新建uiwindow对象
+        window?.rootViewController=MyViewController()//将根视图控制器为myviewcontroller
+        window?.makeKeyAndVisible()//显示window
         return true
     }
 
